@@ -1,0 +1,14 @@
+# Project exclude paths
+/cloud-api-commons/target/
+/cloud-consumer-feign-hystrix-order80/target/
+/cloud-consumer-feign-order80/target/
+/cloud-consumer-order8010/target/
+/cloud-consumerConsule-Order8007/target/
+/cloud-eureka-server9001/target/
+/cloud-eureka-server9002/target/
+/cloud-gateway-gateway9527/target/
+/cloud-provider-hystrix-payment8012/target/
+/cloud-Provider-Payment8001/target/
+/cloud-Provider-Payment8002/target/
+/cloud-providerConsul-payment8006/target/
+/cloudconsumerhystrixdashboard9011/target/
