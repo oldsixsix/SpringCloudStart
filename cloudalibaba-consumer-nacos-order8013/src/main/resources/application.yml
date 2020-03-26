@@ -1,0 +1,19 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: nacos-payment-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+#监控所有
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+#在配置文件中定义消费者将要去访问的微服务名称
+service-url:
+  nacos-user-service: http://nacos-payment-provider

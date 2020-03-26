@@ -1,0 +1,28 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/oldsixsix/SpringCloud-config.git
+#          uri :git@github.com:oldsixsix/SpringCloud-config.git
+#          不能用注释这个，要不然访问不到数据
+          search-paths: SpringCloud-config  #搜索目录
+          username: 952896651@qq.com
+          password: q467807236
+      label: master
+  #rabbitmq相关配置 15672是Web管理界面的端口；5672是MQ访问的端口
+  rabbitmq:
+    host: 192.168.0.113
+    port: 15672
+    username: guest
+    password: guest
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
